@@ -1,16 +1,18 @@
 /* header start */
 
 #Navbar {
-    background-color: #0B1517;
+    /* background-color: #0B1517; */
+    background-color: rgba(12, 12, 13, 0.78);
 }
 
-.Logo {
+
+/* .Logo {
     justify-content: space-between;
-}
+} */
 
 .Logo img {
     width: 120px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .navbar {
@@ -18,12 +20,13 @@
 }
 
 .navbar .navbar-nav .nav-item {
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .navbar .navbar-nav .nav-link {
     color: #fff !important;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 13px 11px 10 40px;
 }
 
 .navbar .navbar-nav .nav-link :hover {
@@ -34,21 +37,31 @@
     color: #fff;
 }
 
-@media (min-width: 992px) {
+
+/* @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
+        align-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+} */
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
         align-content: flex-start;
         flex-wrap: wrap;
         flex-direction: column;
     }
 }
 
-@media (min-width: 576px) {
+
+/* @media (min-width: 576px) {
     .navbar-expand-sm .navbar-collapse {
         align-content: flex-start;
         flex-wrap: wrap;
         flex-direction: column;
     }
-}
+} */
 
 
 /* #navbarColl {
