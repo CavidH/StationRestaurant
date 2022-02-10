@@ -1,8 +1,16 @@
-/* header start */
+/* Navbar start */
 
 #Navbar {
     /* background-color: #0B1517; */
     background-color: rgba(12, 12, 13, 0.78);
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    background-color: aqua;
+    width: 100%;
+    background-color: rgba(12, 12, 13, 0.78);
+    transition: 0.8s ease
 }
 
 
@@ -19,9 +27,10 @@
     display: flex !important;
 }
 
-.navbar .navbar-nav .nav-item {
-    /* margin-right: 50px; */
-}
+
+/* .navbar .navbar-nav .nav-item {
+    margin-right: 50px;
+} */
 
 .navbar .navbar-nav .nav-link {
     color: #fff !important;
@@ -46,13 +55,14 @@
     }
 } */
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
     .navbar-expand-md .navbar-collapse {
         align-content: flex-start;
         flex-wrap: wrap;
         flex-direction: column;
     }
-}
+} */
 
 
 /* @media (min-width: 576px) {
@@ -67,3 +77,52 @@
 /* #navbarColl {
     justify-content: center
 } */
+
+
+/* Navbar End */
+
+
+/* <*******************************> */
+
+.owl-carousel .item img {
+    /* height: 600px; */
+  display: inline-block;
+    max-width: auto;
+    height: 650px!important;
+
+    /* margin-bottom: 30px; */
+/*    object-fit: cover;
+    object-position: center*/
+
+
+
+}
+/*@media screen and (max-width: 766px) {*/
+/*    .owl-carousel .item img{*/
+/*        width: 100%;*/
+/*        height: 50px;*/
+/*        object-fit: cover;*/
+/*        max-width: initial;*/
+/*    }*/
+/*}*/
+
+
+.owl-carousel .owl-wrapper {
+    display: flex !important;
+}
+
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: initial;
+}
+
+@media screen and (max-width: 766px) {
+    .navbar {
+        background-color: rgba(12, 12, 13, 0.78);
+    }
+}
+
+
+/* Slider End */
