@@ -1,5 +1,11 @@
 /* Navbar start */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Playfair Display', serif;
+}
+
 #Navbar {
     /* background-color: #0B1517; */
     background-color: rgba(12, 12, 13, 0.78);
@@ -33,6 +39,7 @@
 } */
 
 .navbar .navbar-nav .nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
     color: #fff !important;
     font-size: 18px;
     padding: 13px 11px 10px 40px;
@@ -86,26 +93,37 @@
 
 .owl-carousel .item img {
     /* height: 600px; */
-  display: inline-block;
+    display: inline-block;
     max-width: auto;
     height: 650px!important;
-
     /* margin-bottom: 30px; */
-/*    object-fit: cover;
+    /*    object-fit: cover;
     object-position: center*/
-
-
-
 }
-/*@media screen and (max-width: 766px) {*/
-/*    .owl-carousel .item img{*/
-/*        width: 100%;*/
-/*        height: 50px;*/
-/*        object-fit: cover;*/
-/*        max-width: initial;*/
-/*    }*/
-/*}*/
 
+
+/*@media screen and (max-width: 766px) {*/
+
+
+/*    .owl-carousel .item img{*/
+
+
+/*        width: 100%;*/
+
+
+/*        height: 50px;*/
+
+
+/*        object-fit: cover;*/
+
+
+/*        max-width: initial;*/
+
+
+/*    }*/
+
+
+/*}*/
 
 .owl-carousel .owl-wrapper {
     display: flex !important;
@@ -124,5 +142,113 @@
     }
 }
 
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    display: none;
+}
+
 
 /* Slider End */
+
+
+/*featured start*/
+
+.Featured-card-title h4 {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #241e1c;
+}
+
+.Featured-card-title {
+    padding: 1.5rem 0.25rem;
+    /* width: 255px;
+    height: 251px; */
+}
+
+
+/* a.img_container {
+    width: 255px;
+    height: 251px;
+}
+
+.Featured-card {
+    margin-left: 150px;
+    margin-left: 150px;
+} */
+
+
+/* .cover {
+    width: 255px;
+    height: 251px;
+} */
+
+#Featured h3 {
+    text-align: center;
+    font-size: 42px;
+    color: #241e1c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*featured end*/
+
+
+/*About start*/
+
+#About {
+    background-color: #f4f4f4;
+}
+
+#About h3 {
+    text-align: center;
+    font-size: 42px;
+    color: #241e1c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-img-container {
+    padding-left: 120px;
+    margin: 50px 0 50px;
+}
+
+.about-txt-container {
+    margin-top: 50px;
+    padding-right: 70px;
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.about-content {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+/*About end*/
+
+
+/***********
+ debug start
+ ***********/
+
+
+/* .container {
+    border: 2px solid green;
+}
+
+.row {
+    border: 2px solid rgb(0, 0, 0);
+} */
+
+
+/***********
+ debug end 
+ ***********/
