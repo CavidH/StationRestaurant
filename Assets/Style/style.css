@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
 @import "normalize.css";
+
 body {
     font-family: 'Playfair Display', serif;
 }
@@ -10,6 +11,10 @@ body {
 #Navbar {
     /* background-color: #0B1517; */
     background-color: rgba(12, 12, 13, 0.78);
+}
+
+.navbar {
+    background: rgba(12, 12, 13, 0.78);
 }
 
 .navbar-fixed-top {
@@ -159,8 +164,8 @@ body {
 
 /*featured start*/
 
-.Featured-card{
-   display: flex;
+.Featured-card {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -168,6 +173,7 @@ body {
     flex-direction: column;
     */
 }
+
 .Featured-card-title h4 {
     font-size: 22px;
     font-family: 'Playfair Display', serif;
@@ -218,6 +224,19 @@ a.img_container {
     }
 }
 
+.features img {
+    width: 100px;
+}
+
+.features h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.features p {
+    font-size: 15px;
+    font-weight: lighter;
+}
 
 /*featured end*/
 
@@ -232,7 +251,7 @@ a.img_container {
     text-align: center;
     font-size: 42px;
     color: #241e1c;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -270,6 +289,34 @@ a.img_container {
 
 /*About end*/
 
+/*paralax start*/
+
+
+.Homeparallax {
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.content-parallax {*/
+/*    background: rgba(255, 255, 255, 0.5);*/
+/*    min-height: 350px;*/
+/*}*/
+
+.content-parallax h1 {
+    text-align: center;
+    color: cyan;
+    padding-top: 100px;
+}
+
+/*paraparalax end*/
 
 /* footer start */
 
@@ -304,7 +351,7 @@ a.img_container {
     opacity: 0.8;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -315,7 +362,7 @@ a.img_container {
     margin-bottom: 36px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-dark .item.text {
         margin-bottom: 0;
     }
@@ -330,14 +377,14 @@ a.img_container {
     text-align: center;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .footer-dark .item.social {
         text-align: center;
         margin-top: 20px;
     }
 }
 
-.footer-dark .item.social>a {
+.footer-dark .item.social > a {
     font-size: 20px;
     width: 36px;
     height: 36px;
@@ -351,7 +398,7 @@ a.img_container {
     opacity: 0.75;
 }
 
-.footer-dark .item.social>a:hover {
+.footer-dark .item.social > a:hover {
     opacity: 0.9;
 }
 
@@ -364,54 +411,132 @@ a.img_container {
 }
 
 
-
 /* footer end */
 
+
+/*mini galery start*/
+
+
+.Galery-container {
+    /*padding: 100px 0;*/
+    background: #F4F4F4;
+    padding-bottom: 50px;
+
+}
+
+.Galery-container h3 {
+    text-align: center;
+    font-size: 42px;
+    color: #241e1c;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Galery-container p {
+    margin-top: 25px;
+    text-align: center;
+
+}
+
+.galery-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 250px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    background-size: cover !important;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background: black;
+    opacity: 0;
+}
+
+.card-link:hover {
+    opacity: 0.1;
+}
+
+/*mini galery end*/
 
 
 /*
 Menu page start
 */
-#Menu{
+#Menu {
     margin-bottom: 100px;
     margin-top: 100px;
 }
-.menu-img-container{
+
+.menu-img-container {
     width: 445px;
 }
+
 .menu-img-container img {
 
-max-width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 
 }
+
 .menu .menu-item {
     position: relative;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
+
 .menu .menu-img {
     width: 80px;
     margin-right: 20px;
 }
+
 .menu .menu-img img {
     width: 100%;
     border-radius: 100px;
 }
+
 .menu .menu-text {
     width: calc(100% - 100px);
 }
+
 .menu .menu-text h3 {
-    position: relative;
-    display: block;
+    display: flex;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 200;
+    justify-content: space-between;
+
+    /*  position: relative;*/
+    /*  display: inline;
+      font-size: 22px;
+      font-weight: 700;*/
 }
+
+.menu .menu-text h3 strong {
+    /* margin-left: 50px;*/
+    font-weight: 600;
+
+    text-align: center;
+}
+
 strong {
     font-weight: bolder;
 }
-.menu .menu-text h3::after {
+
+/*.menu .menu-text h3::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -420,17 +545,23 @@ strong {
     left: 0;
     border-top: 2px dotted #cccccc;
     z-index: -1;
-}
+}*/
 .menu .menu-text p {
     position: relative;
     margin: 5px 0 0 0;
     float: left;
     display: block;
 }
-/*
-Menu page start
-*/
 
+.menu-logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+/*
+Menu page end
+*/
 
 
 /***********
@@ -450,3 +581,39 @@ Menu page start
  debug end 
  ***********/
 
+
+/* Scroll Design */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+/ border-radius: 15 px;
+/ border-top-left-radius: 8 px;
+    border-bottom-left-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: gray;
+/ background: linear-gradient(to bottom, purple, lawngreen, orangered, deepskyblue);
+/
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a2a2a2;
+/ background: linear-gradient(to bottom, #4d004d, #3b8000, #a92e00, #00769b);
+/
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #343434;
+/ background: linear-gradient(to bottom, #620062, #469100, #a82b00, #00a2de);
+/
+}
+
+/* Scroll Design End */
