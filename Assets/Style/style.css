@@ -415,7 +415,9 @@ a.img_container {
 
 
 /*mini galery start*/
-
+.menu-galery{
+    padding-top: 70px;
+}
 
 .Galery-container {
     /*padding: 100px 0;*/
@@ -485,7 +487,16 @@ a.img_container {
 
 .card-link:hover {
     opacity: 0.1;
+
 }
+
+.card:hover{
+
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+
+}
+
 /*mini galery end*/
 
 
@@ -648,3 +659,8 @@ Menu page end
 }
 
 /* Scroll Design End */
+
+
+/*.col-lg-7{*/
+/*    padding: 0!important;*/
+/*}*/
