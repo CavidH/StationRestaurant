@@ -1072,3 +1072,142 @@ max-width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+/*   ---------   */
+
+.content-parallax a{
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color:rgba(12, 12, 13, 0.44);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 25px;
+    width: 200px;
+    /*transition: all 0.5s;*/
+    cursor: pointer;
+    margin: 5px;
+    /*padding: 15px 32px;*/
+
+    /*text-decoration: none;*/
+    /*color: #ffffff;*/
+    /*font-size: 45px;*/
+}
+
+
+.content-parallax a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.content-parallax a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.content-parallax a:hover span {
+    padding-right: 25px;
+}
+
+.content-parallax a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*.content-parallax a:hover{*/
+/*    background-color: rgba(12, 12, 13, 0.78);*/
+
+/*}*/
+
+
+
+
+
+
+
+
+/* contact  */
+#Contact{
+    margin-top: 100px;
+}
+
+#Contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 81px;
+    font-weight: 600;
+}
+.contactForum{
+    background: #fff;
+    box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.contact_label{
+
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    font-weight: 500;
+
+}
+
+
+.form_contact{
+    padding: 0px 10px;
+    margin-bottom: 20px;
+
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    color: #021626;
+    font-size: 16px;
+    font-weight: normal;
+    border: #ddd solid 1px;
+    box-shadow: #0000000f 0 0px 3px 0px;
+}
+
+ .textarea_contact {
+    margin-bottom: 20px;
+    width: 100%;
+    background: #fff;
+    color: #021626;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 12px 15px 10px 15px;
+    border: inherit;
+    height: 155px;
+    border: #ddd solid 1px;
+    box-shadow: #0000000f 0 0px 3px 0px;
+}
+.send_contact_btn {
+    width: 185px;
+    height: 55px;
+    background: #282D32;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+    transition: ease-in all 0.5s;
+    border: inherit;
+    margin: 0 auto;
+    display: block;
+}
+
+.map{
+    width: 100%;
+}
